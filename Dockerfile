@@ -1,10 +1,10 @@
-FROM node
+FROM node:12
 WORKDIR /app
 COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY app.js .
 
 EXPOSE 3000
 
