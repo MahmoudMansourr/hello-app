@@ -17,6 +17,22 @@ pipeline {
                 }
             }
         }
+
+         stage('app deployment') {
+            steps {
+               withCredentials([usernamePassword(credentialsId: 'docker', passwordVariable: 'MYPASS', usernameVariable: 'MYUSER')]) {
+                    sh """
+                    docker login -u \${MYUSER} -p \${MYPASS}
+                    kubectl delete deployment --all -n express-app
+                    kubectl apply -f namespace.yaml
+                    kubectl apply -f deploy.yaml
+                    kubectl apply -f load.yaml
+                    """
+               }
+            }
+        }
+
+
     
     }
 }
