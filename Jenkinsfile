@@ -11,7 +11,7 @@ pipeline {
                     sh """ 
                     docker login -u \${MYUSER} -p \${MYPASS}
                     docker build . -t myapp:1
-                    docker tag myapp mahmoudmansourr/myapp:1
+                    docker tag myapp:1 mahmoudmansourr/myapp:1
                     docker push mahmoudmansourr/myapp:1
                     """
                 }
