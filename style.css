@@ -1,0 +1,124 @@
+body {
+    background-image:url('img/Catbg1.jpg');
+    background-repeat:repeat;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.content {
+    width: 1200px;
+    height: 1800px;
+    margin: auto;   
+    background: white;
+    position: relative;
+    border-radius: 30px;
+}
+
+
+.header{
+    padding-right:2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+.navbar {
+    position:absolute;
+    left:570px;
+    top:15px;
+    list-style:none;
+    font-family: 'Arial Rounded MT';
+    color: #FF9F1C;
+    font-size:1.5em;
+}
+
+.navbar li{
+    display:inline;
+    margin:15px;
+}
+
+.navbar li:hover {
+    text-decoration-line:underline;
+    font-size:30px;
+}
+
+.main{
+    margin-top: 150px;
+    width: 1200px;
+    position:absolute;
+}
+
+h1{
+    color: #077692;
+}
+
+p,ol{
+    font-size:25px;
+}
+
+.cats{
+    margin-top: 70px;
+    position:relative;
+}
+
+.images{
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 350px;
+    margin-left: 40px;
+}
+
+.icons{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.icons:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.footer {
+    bottom: 0;
+    width: 1200px;
+    background-color: #eae9e8;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-top: 30px;
+    position: absolute;
+}
+
+.footer-paragragh {
+    color: #2ec4b6;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin:auto
+}
+
+.footer-media {
+    width: 30px;
+    height: 30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:30px;
+    margin-right:30px;
+    position:center;
+}

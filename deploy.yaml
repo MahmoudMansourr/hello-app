@@ -17,4 +17,4 @@ spec:
       - name: myapp
         image: mahmoudmansourr/myapp:1
         ports:
-        - containerPort: 3000
+        - containerPort: 80
