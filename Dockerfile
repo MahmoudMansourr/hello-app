@@ -1,11 +1,6 @@
-FROM nginx:latest
-
-WORKDIR /usr/share/nginx/html
-
-COPY img/ .
-COPY style.css .
-COPY index.html .
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+FROM node:12
+WORKDIR /nodeapp
+COPY app.js /nodeapp
+COPY package.js /nodeapp
+RUN npm install
+CMD ["node", "/nodeapp/app.js"]
