@@ -4,4 +4,4 @@ COPY app.js /nodeapp
 COPY package.json /nodeapp
 RUN npm install
 EXPOSE 3000
-CMD ["node", "/nodeapp/app.js"]
+CMD ["node", "/app.js"]
